@@ -1,0 +1,56 @@
+//Simple Variable definition
+
+<var_a="10">
+<int_max="99999999"> 
+
+Database[id="%var_a"]{
+
+}
+
+Database[id="test"]{
+	Table[id="keytab_verw"]{
+		Column[id="ID", columnType="primaryKey", verw="keytab_entry.VERW_ID"]{
+			1010[]
+			1011[]
+		}
+		Column[id="GUELTIG_BIS"]{
+			%int_max[]
+			%int_max[]
+		}
+		Column[id="KURZ_TEXT"]{
+			Geschlecht[]
+			Nationalitaet[]
+		}
+		Column[id="TABELLEN_ART"]{
+			A[]
+			B[]
+		}
+	}
+	
+	Table[id="keytab_entry"]{
+		Column[id="ID", columnType="primaryKey"]{
+			1[]
+			2[]
+			10[]
+			11[]
+		}
+		Column[id="VERW_ID", columnType="secondaryKey"]{
+			1010[]
+			1010[]
+			1011[]
+			1011[]
+		}
+		Column[id="KEY"]{
+			M[]
+			W[]
+			D[]
+			DK[]
+		}
+		Column[id="KURZ_TEXT"]{
+			Maennlich[]
+			Weiblich[]
+			Deutschland[]
+			Daenemark[]
+		}
+	}
+}

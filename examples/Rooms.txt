@@ -1,0 +1,8 @@
+Save_1[date="21.12.2021"]{
+	<r="Room", d="Description", c="Connection">
+	
+	%r[name="Kitchen"]{
+		%d[text="Eine tolle %d !"]
+		%c[dir="North", text="Eine Tür führt ins Freie..."]
+	}
+}
