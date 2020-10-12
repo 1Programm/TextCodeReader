@@ -1,0 +1,10 @@
+// Comment 1
+MyRoot[id="foo"]{/*
+
+	Comment 2
+	*/
+	MyChild[name="bar"]
+	
+	/*Comment 3 */
+	
+} //Comment 4

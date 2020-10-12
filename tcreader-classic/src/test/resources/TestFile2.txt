@@ -1,0 +1,11 @@
+//Root Variables
+<foo="bar", secret="cake">
+
+//Node with name filled by variable "foo"
+MyRoot[name="%foo"]{
+	/*
+		Multi - line comment
+	*/
+	Node1[name="Node 1"]
+	Node2[mySecret="%secret"]
+}
